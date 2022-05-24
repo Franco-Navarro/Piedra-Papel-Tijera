@@ -76,6 +76,19 @@ p {
   line-height: 1.6;
 }
 
+
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0; 
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+
 /* ***** Components ***** */
 
 /* ***** Utilities ***** */
@@ -324,6 +337,10 @@ p {
     font-size: 1.3rem;
   }
 
+  .game-next_round-hand {
+    cursor: pointer;
+  }
+
   .game-selected-player img,
   .game-selected-cpu img {
     width: 75%;
@@ -341,6 +358,8 @@ p {
     margin: 0.6rem;
   }
 }
+
+
 
 @media screen and (min-width: 1025px) {
   html {
@@ -372,4 +391,14 @@ p {
   .game-next_round-hand img {
     width: 40%;
   }
+}
+
+
+.none {
+  display: none;
+}
+
+.selected {
+  transform: scale(1.2);
+  color: var(--first-color);
 }
