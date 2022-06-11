@@ -33,6 +33,18 @@
   </head>
 
   <body>
+    <section class="loader none" id="loader">
+      <img src="assets/loadPulse.svg" alt="">
+    </section>
+    <section class="modal" id="modal">
+      <article class="container modal-img">
+        <img src="assets/modalImage.png" alt="">
+        <p>Piedra, papel o tijera es un juego de manos en el que existen tres elementos: la piedra que vence a la tijera rompiéndola, la tijera que vence al papel cortándolo y el papel que vence a la piedra envolviéndola</p>
+      </article>
+      <aside class="modal-button">
+        <button class="button" id="closeModal">Cerrar</button>
+      </aside>
+    </section>
     <section class="section home">
       <article class="container home-container">
         <h1>PIEDRA PAPEL TIJERA</h1>
@@ -48,8 +60,9 @@
       </article>
     </section>
 
-    <section class="section game none" >
+    <section class="section game none no-display" >
       <header class="container header" id="header-game"></header>
+      
       <article class="container game-container" id="container-game"></article>
       <aside class="container game-next_round">
         <h3>SIGUIENTE RONDA</h3>
@@ -69,7 +82,7 @@
       <input class="button" type="button" value="JUGAR" id="next-round">
     </section>
 
-    <section class="section result none">
+    <section class="section result none no-display">
       <article class="container result-container">
         <div class="result-board" id="result-board"></div>
         <div class="result-board-menu">
